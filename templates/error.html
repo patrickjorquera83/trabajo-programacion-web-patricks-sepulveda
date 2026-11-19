@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block titulo %}Error {{ codigo }}{% endblock %}
+{% block contenido %}
+    <h2>Error {{ codigo }}</h2>
+    <div class="resultado error">{{ mensaje }}</div>
+    <a class="volver" href="{{ url_for('index') }}">&larr; Volver al menú</a>
+{% endblock %}
